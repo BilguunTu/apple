@@ -3,14 +3,15 @@
   padding: 0;
   font-family: sans-serif;
 }
-body {
-}
 
 header {
   background-color: black;
   height: 44px;
 }
 
+.whiteColor {
+  color: white;
+}
 .flex {
   display: flex;
 }
@@ -19,6 +20,9 @@ header {
 }
 .grid {
   display: grid;
+}
+.width {
+  width: 100vw;
 }
 
 .align-item {
@@ -73,28 +77,107 @@ footer {
   padding-top: 24px;
   border-top: #d2d2d7 solid 1px;
 }
-section {
-  width: 196px;
-}
 
 .container {
   width: 1800px;
 }
-.banner {
+/* .banner {
   position: relative;
   width: 100vw;
-}
+} */
 
 .banner img {
   width: 100%;
 }
 .bannerText {
   position: absolute;
-  top: 80%;
+  bottom: 30%;
   left: 37%;
   color: #fff;
   text-align: center;
   font-size: 20px;
   font-weight: 300;
   font-family: sans-serif;
+}
+.positionRelative {
+  position: relative;
+}
+section img {
+  object-fit: cover;
+}
+
+.sectionText {
+  position: absolute;
+  left: 25%;
+  top: 5%;
+  text-align: center;
+}
+
+.sectionText h1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 48px;
+}
+.sectionText p {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+.LinkText {
+  color: #0066cc;
+  gap: 40px;
+  font-weight: 300;
+  font-size: 17px;
+  margin-top: 14px;
+}
+.LinkText span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.series {
+  color: red;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 12px 0 12px 0;
+}
+
+.ultra {
+  color: orange;
+  font-size: small;
+  font-weight: 400;
+  margin: 12px 0 12px 0;
+}
+
+.productCards {
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "gridIPhone14 gridIPad"
+    "gridAirpods gridWatch"
+    "gridWatchUltra gridCard";
+}
+
+.gridIPhone14 {
+  grid-area: gridIPhone14;
+  place-self: center;
+}
+.gridIPad {
+  grid-area: gridIPad;
+  place-self: center;
+}
+.gridAirpods {
+  grid-area: gridAirpods;
+  place-self: center;
+}
+.gridWatch {
+  grid-area: gridWatch;
+}
+.gridWatchUltra {
+  grid-area: gridWatchUltra;
+}
+.gridCard {
+  grid-area: gridCard;
 }
