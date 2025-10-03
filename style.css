@@ -81,10 +81,6 @@ footer {
 .container {
   width: 1800px;
 }
-/* .banner {
-  position: relative;
-  width: 100vw;
-} */
 
 .banner img {
   width: 100%;
@@ -99,8 +95,31 @@ footer {
   font-weight: 300;
   font-family: sans-serif;
 }
+.bannerProduct {
+  position: absolute;
+  bottom: 0px;
+}
+
+.bannerProduct h1 {
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 60px;
+}
+.bannerProduct p {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 31px;
+}
+.bannerLinkText {
+  color: #0066cc;
+  gap: 90px;
+  font-weight: 300;
+  font-size: 21px;
+  margin-top: 14px;
+}
 .positionRelative {
   position: relative;
+  margin: auto;
 }
 section img {
   object-fit: cover;
@@ -108,9 +127,7 @@ section img {
 
 .sectionText {
   position: absolute;
-  left: 25%;
   top: 5%;
-  text-align: center;
 }
 
 .sectionText h1 {
@@ -122,6 +139,11 @@ section img {
   font-size: 21px;
   font-weight: 300;
   line-height: 36px;
+}
+.textCenter {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .LinkText {
@@ -180,4 +202,11 @@ section img {
 }
 .gridCard {
   grid-area: gridCard;
+}
+
+.footerText {
+  margin: 34px 0 34px 0;
+  font-size: 12px;
+  font-weight: 300;
+  columns: #6e6e73;
 }
