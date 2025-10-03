@@ -116,6 +116,7 @@ footer {
   font-weight: 300;
   font-size: 21px;
   margin-top: 14px;
+  cursor: pointer;
 }
 .positionRelative {
   position: relative;
