@@ -97,7 +97,7 @@ footer {
 }
 .bannerProduct {
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
 }
 
 .bannerProduct h1 {
