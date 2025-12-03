@@ -11,14 +11,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($username === '' || $password === '') {
         $error = 'Нэвтрэх нэр болон нууц үгээ бөглөнө үү.';
     } else {
-        // admin хүснэгтээс хайна
         $stmt = $conn->prepare("SELECT id, username, password FROM admin WHERE username = ?");
         $stmt->bind_param("s", $username);
         $stmt->execute();
         $result = $stmt->get_result();
 
         if ($row = $result->fetch_assoc()) {
-            // Одоохондоо шууд текстээр шалгаж байна: password багана дээр 1234 гэж бичсэн
+            // admin1
             if ($password === $row['password']) {
                 $_SESSION['admin_id'] = $row['id'];
                 $_SESSION['admin_username'] = $row['username'];

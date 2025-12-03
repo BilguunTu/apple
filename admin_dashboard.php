@@ -2,7 +2,6 @@
 session_start();
 require_once 'db_connect.php';
 
-// Хэрэв нэвтрээгүй бол login руу буцаана
 if (!isset($_SESSION['admin_id'])) {
     header("Location: admin_login.php");
     exit;
@@ -35,7 +34,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-// Жишээ болгон сүүлд нэмэгдсэн хоолнуудыг харуулъя
 $result = $conn->query("SELECT id, ner, angilal, une, uusgesen_ognoo FROM food ORDER BY id DESC LIMIT 10");
 ?>
 <!DOCTYPE html>
